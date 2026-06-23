@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width-device-width, initial scale-1.0"/>
+        <title>Melody Flow | Music Player</title>
+        <link>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Main Player Card -->
+        <div class="player-container">
+            <div class="player-card">
+                <div class="album-art">
+                    <div class="art-inner"></div>
+                </div>
+                
+                <div class="track-info">
+                    <h2 class="song-title">Saaiyara</h2>
+                    <p class="artist-name">Krish K</p>
+                </div>
+
+                <!-- Music Progress Bar -->
+                <div class="progress">
+                    <span class="time-current">1:32</span>
+                    <div class="bar">
+                        <div class="fill"></div>
+                    </div>
+                    <span class="time-total">4:15</span>
+                </div>
+
+                <!-- Main Controls -->
+                <div class="controls">
+                    <button class="ctrl-btn" aria-label="Shuffle">🔀</button>
+                    <button class="ctrl-btn" aria-label="Previous">⏮</button>
+                    <button class="ctrl-btn" aria-label="Play">▶</button>
+                    <button class="ctrl-btn" aria-label="Next">⏭</button>
+                    <button class="ctrl-btn" aria-label="Repeat">🔁</button>
+                </div>
+
+                <!-- Volume button -->
+                <div class="volume">
+                    <span class="vol-icon">🔊</span>
+                    <input type="range" class="vol-sidebar" min="0" max="100" value="70">
+                </div>
+            </div>
+
+
+            <aside class="playlist">
+                <h3>Up Next</h3>
+                <ul>
+                    <li class="track active">Saaiyara <span>Krish K</span></li>
+                    <li class="track">Oceans <span>Hillsong</span></li>
+                    <li class="track">So i will <span>Hillsong</span></li>
+                    <li class="track">So Good To Me <span>Elevation</span></li>
+                    <li class="track">New Wine <span>Dunsin Oyekan</span></li>
+                    <li class="track">End of the day <span>   AnEndlessoceean</span></li>
+                    <li class="track">Orlando <span>  AnEndlessocean</span></li>
+                </ul>
+            </aside>
+        </div>
+    </body>
+</html>
