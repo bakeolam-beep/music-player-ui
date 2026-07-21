@@ -1,63 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width-device-width, initial scale-1.0"/>
-        <title>Melody Flow | Music Player</title>
-        <link>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <!-- Main Player Card -->
-        <div class="player-container">
-            <div class="player-card">
-                <div class="album-art">
-                    <div class="art-inner"></div>
-                </div>
-                
-                <div class="track-info">
-                    <h2 class="song-title">Saaiyara</h2>
-                    <p class="artist-name">Krish K</p>
-                </div>
 
-                <!-- Music Progress Bar -->
-                <div class="progress">
-                    <span class="time-current">1:32</span>
-                    <div class="bar">
-                        <div class="fill"></div>
-                    </div>
-                    <span class="time-total">4:15</span>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                <!-- Main Controls -->
-                <div class="controls">
-                    <button class="ctrl-btn" aria-label="Shuffle">🔀</button>
-                    <button class="ctrl-btn" aria-label="Previous">⏮</button>
-                    <button class="ctrl-btn" aria-label="Play">▶</button>
-                    <button class="ctrl-btn" aria-label="Next">⏭</button>
-                    <button class="ctrl-btn" aria-label="Repeat">🔁</button>
-                </div>
+    <title>Music Player UI</title>
 
-                <!-- Volume button -->
-                <div class="volume">
-                    <span class="vol-icon">🔊</span>
-                    <input type="range" class="vol-sidebar" min="0" max="100" value="70">
-                </div>
-            </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar">
+
+            <h2 class="logo">Wave</h2>
+
+            <nav>
+
+                <a href="#">Home</a>
+                <a href="#">Discover</a>
+                <a href="#">Albums</a>
+                <a href="#">Artists</a>
+                <a href="#">Favorites</a>
+
+            </nav>
+
+        </aside>
 
 
-            <aside class="playlist">
-                <h3>Up Next</h3>
-                <ul>
-                    <li class="track active">Saaiyara <span>Krish K</span></li>
-                    <li class="track">Oceans <span>Hillsong</span></li>
-                    <li class="track">So i will <span>Hillsong</span></li>
-                    <li class="track">So Good To Me <span>Elevation</span></li>
-                    <li class="track">New Wine <span>Dunsin Oyekan</span></li>
-                    <li class="track">End of the day <span>   AnEndlessoceean</span></li>
-                    <li class="track">Orlando <span>  AnEndlessocean</span></li>
-                </ul>
-            </aside>
-        </div>
-    </body>
+        <main class="player">
+
+            <section class="album">
+
+                <img src="assets/images/album.jpg" alt="Album">
+
+                <h1>Midnight Echoes</h1>
+
+                <p>Aurora Lane</p>
+
+            </section>
+
+
+            <section class="progress">
+
+                <span>1:24</span>
+
+                <div class="bar">
+
+                    <div class="fill"></div>
+
+                </div>
+
+                <span>3:48</span>
+
+            </section>
+
+
+            <section class="controls">
+
+                <button>⏮</button>
+
+                <button class="play">▶</button>
+
+                <button>⏭</button>
+
+            </section>
+
+
+            <section class="volume">
+
+                <span>🔊</span>
+
+                <div class="slider">
+
+                    <div class="level"></div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+
+        <aside class="playlist">
+
+            <h3>Playlist</h3>
+
+            <ul>
+
+                <li class="active">
+                    Midnight Echoes
+                </li>
+
+                <li>
+                    Ocean Lights
+                </li>
+
+                <li>
+                    Neon Skies
+                </li>
+
+                <li>
+                    Lost in Summer
+                </li>
+
+                <li>
+                    Sunset Dreams
+                </li>
+
+            </ul>
+
+        </aside>
+
+    </div>
+
+</body>
+
 </html>
