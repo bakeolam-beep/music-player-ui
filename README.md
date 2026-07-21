@@ -33,7 +33,7 @@ The project explores how elegant user interfaces can be crafted using core web t
 - Volume slider
 - Playlist sidebar
 - Modern typography
-- Mobile-friendly layout
+- Mobile-friendly layout..
 
 ---
 
