@@ -39,7 +39,7 @@ The project explores how elegant user interfaces can be crafted using core web t
 
 ## Demo
 
-🌐 **Live Demo:** Add your Vercel deployment URL here.
+🌐 **Live Demo:** https://music-player-ui-gold.vercel.app/
 
 
 ### Desktop
